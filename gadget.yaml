@@ -1,8 +1,8 @@
-name: "@GADGET_NAME@"
+name: "ig-template"
 description: Periodically report chdir syscall counts by process
-homepageURL: https://github.com/@REPOSITORY@
-documentationURL: https://github.com/@REPOSITORY@#readme
-sourceURL: https://github.com/@REPOSITORY@
+homepageURL: https://github.com/s9kt/ig-template
+documentationURL: https://github.com/s9kt/ig-template#readme
+sourceURL: https://github.com/s9kt/ig-template
 datasources:
   calls:
     fields:
