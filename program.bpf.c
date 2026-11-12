@@ -55,8 +55,8 @@ GADGET_MAPITER(calls, gadget_counts);
  * Update README requirements; if map fields change, run make metadata
  * and review gadget.yaml.
  */
-SEC("tracepoint/syscalls/sys_enter_chdir")
-int gadget_count_chdir(struct trace_event_raw_sys_enter *ctx)
+SEC("tracepoint/raw_syscalls/sys_enter")
+int gadget_count_syscall(struct trace_event_raw_sys_enter *ctx)
 {
 	if (gadget_should_discard_data_current())
 		return 0;
